@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name= viewport content="width=device-width initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Make Party - Contato </title>
+</head>
+<body>	
+	<main >
+		
+		<div class="topnav navbar-fixed-top" id="myTopnav">
+			  <a href="index.html">MakeParty</a>
+			  <a href="produtos.html">Produtos</a>
+			  <a href="downloads.html">Downloads</a>
+			  <a href="contato.html">Contato</a>
+			  <a id="esq"  href="cadastro.html">Cadastre-se </a>
+			  <a id="esq"  href="login.html">Login</a>
+			  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		<script>
+	     	  function myFunction() {
+	     	  var x = document.getElementById("myTopnav");
+			  if (x.className === "topnav navbar-fixed-top") {
+				 x.className += " responsive ";
+
+			  } else {
+				     x.className = "topnav navbar-fixed-top";
+						    }
+						}
+			</script>
+
+		<a id="top"></a>	
+		<header id="cabeca">
+		<img src="multimidia/header.jpg">
+		</header>
+		<section id="contato">
+			<h3>Estamos localizados em São Paulo.</h3>
+			<h5>Nossa sede fica localizada na Av. Paulista, 1600 - Bela Vista, São Paulo - SP, 01310-100  </h5>
+			<br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.175215540131!2d-46.65751398493711!3d-23.562149784682465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c925b04b7f%3A0x7177c3b4872477f3!2sAv.+Paulista%2C+1600+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP%2C+01310-100!5e0!3m2!1spt-BR!2sbr!4v1490364808306" width="50%" height="450" frameborder="0" style="border:0 " allowfullscreen></iframe>
+			<br>
+		</section>	
+		
+		<section id="formulario">
+			<h3>Entre em contato</h3>
+			<h5>Preencha os campos abaixo e nos ajude a melhorar.</h5>
+			<form id="formulario2" action="formularioresposta.html">
+						<p> Nome Completo: </p> <input id="box2" type="text" name="Nome completo" required>
+						<br>
+						<br>
+						<p> Email :</p><input id="box2" type="email" name="Email" required >
+						<br>
+						<br>
+						<p> Cidade</p><input id="box2" type="text" name="Cidade">
+						<br>
+						<br>
+						<p>Estado</p><input id="box2" type="text" name="Estado">
+						<br>
+						<br>
+						<p>Observações</p><textarea id="testarea1" size="80"></textarea> 
+						<br>
+						<br>
+
+						<input type="submit" value="Enviar">
+			</form>			
+		</section>
+
+		<footer>
+		<div id="botoesRedes">
+				<figure>
+					<a href="https://www.facebook.com/MakeParty-301311193621946/">
+						<img src="multimidia/ms-facebook.gif">
+					</a>
+					<a href="">
+						<img src="multimidia/ms-twitter.gif">
+					</a>
+				</figure>
+			</div>
+			<a href="#top" id="top">
+				<img src="multimidia/seta2.jpg" style="width: 30px; height: 30px;">
+			</a>
+			<h5>MakeParty feito por Paulo Seixas - Copyright 2017- todos os direitos reservados.</h5>
+		</footer>
+	</main>
+	<script href="js\estilo.js"></script>
+	<script href="js\bootstrap.js"></script>
+	<script href="jquery.js"></script>
+</body>
+</html>

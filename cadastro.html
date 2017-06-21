@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name= viewport content="width=device-width initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>MakeParty-Login / Cadastre-se.</title>
+</head>
+<body>	
+	<main>
+		
+			<div class="topnav navbar-default navbar-fixed-top" role="navigation"  id="myTopnav">
+			    <a class="navbar-brand" href="index.html" style="font-family: josefin sans; font-size: 2em; color: white">MakeParty</a>
+			           
+					      	<a href="index.html">Sobre</a>
+					        <a href="produtos.html">Produtos</a>
+					        <a href="downloads.html">Download</a>
+					        <a href="contato.html">Contato</a>   
+					        <a id="esq"  href="cadastro.html">Cadastre-se </a>
+					        <a id="esq"  href="login.html">Login</a>
+					        <a id="botao" href="javascript:void(0)" style="font-size:15px;" class="icon" onclick="myFunction()">
+					        		<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
+						        		<span class="icon-bar"></span>
+						        		<span class="icon-bar"></span>
+						        		<span class="icon-bar"></span>
+					        		</button>
+					        </a>		    
+			  
+			  <script type="text/javascript">
+				  
+		     	  function myFunction() {
+
+		     	  var x = document.getElementById("myTopnav");
+
+
+				  if (x.className === "topnav navbar-default navbar-fixed-top") {
+					 x.className += " responsive ";
+
+				  } 
+				  else {
+					     x.className = "topnav navbar-default navbar-fixed-top";
+					    }
+							}
+				</script>
+			</div>
+		
+	<header>
+		<a id="top" ></a>
+	
+		<section id="cabeca">
+			<img src="multimidia/header.jpg" style="border-radius: 15px; width: 100%;">
+		</section>
+	</header>
+		 <section id="cadastlogin">
+		 	<section id="cadastre">
+				 	<h4>Cadastre-se no MakeParty é Grátis!!!</h4>
+					<form method="POST" action="cadastro.php">
+						<p> Nome Completo: </p> <input class="box" type="text" name="nome" required>
+						<br>
+						<br>
+						<p> Email :</p><input class="box" type="email" name="login" required >
+						<br>
+						<br>
+						<p> Senha MakeParty:</p> <input class="box" type="password" name="senha" style="" >
+						<br>
+						<br>
+						<p>Confirme sua senha MakeParty:</p><input type="password"  class="box" id="confirm_password" required>
+						<script type="text/javascript">
+							var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
+
+							function validatePassword(){
+  							if(password.value != confirm_password.value) {
+   								 confirm_password.setCustomValidity("As senhas não são iguais");
+  								} else {
+    								confirm_password.setCustomValidity('');
+  										}
+								}
+
+							password.onchange = validatePassword;
+							confirm_password.onkeyup = validatePassword;
+						</script>
+						<br>
+						<br>
+        				<p> Endereço com Nº </p><input class="box" type="text" name="endereco">
+						<br>
+						<br>
+						<p> CEP :</p><input class="box" type="text" name="cep">
+						<br>
+						<br>
+						<p> Bairro :</p><input class="box" type="text" name="bairro" >
+						<br>
+						<br>
+						<p> Cidade:</p><input class="box" type="text" name="cidade" >
+						<br>
+						<br>
+						<p> Estado:  </p>
+							<select name="estado" class="box">
+								<option value="">Selecione o Estado</option>
+								<option value="ac">Acre</option>
+								<option value="al">Alagoas</option>
+								<option value="ap">Amapá</option>
+								<option value="am">Amazonas</option>
+								<option value="ba">Bahia</option>
+								<option value="ce">Ceará</option>
+								<option value="df">Distrito Federal</option>
+								<option value="es">Espírito Santo</option>
+								<option value="go">Goiás</option>
+								<option value="ma">Maranhão</option>
+								<option value="ms">Mato Grosso do Sul</option>
+								<option value="mt">Mato Grosso</option>
+								<option value="mg">Minas Gerais</option>
+								<option value="pa">Pará</option>
+								<option value="pb">Paraíba</option>
+								<option value="pr">Paraná</option>
+								<option value="pe">Pernambuco</option>
+								<option value="pi">Piauí</option>
+								<option value="rj">Rio de Janeiro</option>
+								<option value="rn">Rio Grande do Norte</option>
+								<option value="rs">Rio Grande do Sul</option>
+								<option value="ro">Rondônia</option>
+								<option value="rr">Roraima</option>
+								<option value="sc">Santa Catarina</option>
+								<option value="sp">São Paulo</option>
+								<option value="se">Sergipe</option>
+								<option value="to">Tocantins</option>
+							</select>
+        				<br>
+        				<br>
+        				<p> Telefones Residencial, Comercial ou Celular (XX)XXXX-XXXX:</p><input type="text"  class="box" name="telefone">
+						<br>
+						<br>
+						<p> Imagem de Perfil:</p><input style="text-align: center !important; ;width:30% ;margin-left: 35%; margin-right: 35%;" type="file"  name="imagem" >
+						<br>
+						<input type="checkbox" name="termos" required> Clique para aceitar os <a href="###"> termos de uso.</a>
+						<br>
+						<br>
+						<input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar">
+					</form>
+			</section>					
+		 </section>		
+		<footer>
+		<div id="botoesRedes">
+				<figure>
+					<a href="https://www.facebook.com/MakeParty-301311193621946/">
+						<img src="multimidia/ms-facebook.gif">
+					</a>
+					<a href="">
+						<img src="multimidia/ms-twitter.gif">
+					</a>
+				</figure>
+		</div>
+			<a href="#top" id="top">
+				<img src="multimidia/seta2.jpg" style="width: 30px; height: 30px;">
+			</a>
+			<h5>MakeParty feito por Paulo Seixas - Copyright 2017- todos os direitos reservados.</h5>
+		</footer>
+	</main>
+	<script href="js\estilo.js"></script>
+	<script href="js\bootstrap.js"></script>
+	<script href="jquery.js"></script>
+</body>
+</html>
